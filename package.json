@@ -1,11 +1,11 @@
 {
-  "name": "portfolio",
+  "name": "homework-lwt",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build --base=/portfolio/",
+    "build": "vite build --base=/homework-lwt/",
     "preview": "vite preview"
   },
   "devDependencies": {
