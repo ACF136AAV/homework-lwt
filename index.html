@@ -2,82 +2,1136 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio/assets/favicon-8ddae73f.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-05c5c2f5.js">
+    <link rel="stylesheet" href="/portfolio/assets/vendor-827d51bf.css">
+    <link rel="stylesheet" href="/portfolio/assets/index-02bc1ddf.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <header id="header" class="section header-cont container">
+  <section class="header">
+    <div class="logo-cont">
+      <picture>
+        <source srcset="/portfolio/assets/avatar-1ea26237.png 1x, /portfolio/assets/avatar@2x-0bcef3d8.png 2x" />
+        <img src="/portfolio/assets/avatar-1ea26237.png" alt="logo" loading="lazy" />
+      </picture>
+      <p class="text-logo">jefferson*</p>
+    </div>
+    <div class="header-menu">
+      <button type="button" class="open-menu-btn">Menu</button>
+      <ul class="header-menu-list">
+        <li class="header-menu-item">
+          <a href="#about-me" class="header-menu-item-link">About me</a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="header-menu-item">
+          <a href="#benefits" class="header-menu-item-link">Benefits</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#projects" class="header-menu-item-link">Projects</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#faq" class="header-menu-item-link">FAQ</a>
         </li>
       </ul>
     </div>
+    <div class="open-modal-cont">
+      <button type="button" class="open-modal-btn">
+        <svg class="open-btn-icon">
+          <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-open-menu"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="order-btn-cont">
+      <a href="#work-together" class="order-btn">Order the project</a>
+    </div>
+  </section>
+</header>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+<!-- Modal window -->
+
+<div class="modal-window-cont">
+  <div class="modal-window">
+    <div class="close-icon-cont">
+      <button type="button" class="close-modal-btn">
+        <svg class="close-modal-btn-icon">
+          <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="modal-list">
+      <li class="modal-item">
+        <a href="#about-me" class="modal-item-link">About me</a>
+      </li>
+      <li class="modal-item">
+        <a href="#benefits" class="modal-item-link">Benefits</a>
+      </li>
+      <li class="modal-item">
+        <a href="#projects" class="modal-item-link">Projects</a>
+      </li>
+      <li class="modal-item">
+        <a href="#faq" class="modal-item-link">FAQ</a>
+      </li>
+    </ul>
+    <a href="#work-together" class="menu-order-btn">Order the project</a>
+  </div>
+</div>
+
+    <main>
+      <section class="hero section">
+  <div class="hero-container container">
+    <h1 class="hero-title">
+      Hello.<br />I’m Fullstack developer Lloyd Jefferson.
+    </h1>
+  </div>
+  <div class="hero-socials container">
+    <ul class="socials-list">
+      <li class="item">
+        <a
+          class="hero-link"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          >IG</a
+        >
+      </li>
+      <li class="item">
+        <a
+          class="hero-link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          >FB</a
+        >
+      </li>
+      <li class="item">
+        <a
+          class="hero-link"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          >YT</a
+        >
+      </li>
+      <li class="item">
+        <a
+          class="hero-link"
+          href="https://github.com/MaksymMykhailets/portfolio"
+          target="_blank"
+          >GH</a
+        >
+      </li>
+      <li class="item">
+        <a class="hero-link" href="mailto:lloydjefferson@gmail.com"
+          >lloydjefferson@gmail.com</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section id="about-me" class="section about-me">
+  <h2 class="visually-hidden">About me</h2>
+  <div class="container">
+    <ul class="about-me-header">
+      <li class="about-me-header-item">
+        <p class="about-me-header-title">
+          I work with people all over the world to create impressive and
+          <span class="about-me-text-accent">functional </span>
+          <span class="about-me-title-websites">websites </span> that reflect
+          each client's unique personality.
+        </p>
+      </li>
+      <li class="about-me-header-item">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="/portfolio/assets/about-me-desk-7006d36c.png 1x, /portfolio/assets/about-me-desk@2x-c4a40894.png 2x"
+          />
+          <source
+            media="(min-width: 375px)"
+            srcset="/portfolio/assets/about-me-a752f943.png 1x, /portfolio/assets/about-me@2x-16baa983.png 2x"
+          />
+          <img
+            class="about-me-header-img"
+            src="/portfolio/assets/about-me-a752f943.png"
+            loading="lazy"
+            alt="photo"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container about-me-info">
+    <div class="about-me-accordion-container">
+      <div class="ac about-me-info-item">
+        <div class="ac-trigger">
+          <ul class="about-me-info-header">
+            <li class="about-me-info-title">ABOUT ME</li>
+            <li class="about-me-info-btn">
+              <svg class="about-me-nav-btn">
+                <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-up"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="ac-panel about-me-info-text-list">
+          <ul class="about-me-info-text-list">
+            <li class="about-me-info-text">
+              I am Lloyd Jefferson, a talented programmer with extensive
+              expertise in software development. I have an understanding of
+              different programming languages ​​and technologies, always ready
+              to improve my skills. I always follow the latest trends and look
+              for unconventional, creative solutions to problems. I have a high
+              level of analytical skills and am able to effectively solve even
+              the most difficult tasks encountered on the way.
+            </li>
+            <li class="about-me-info-text">
+              Able to work both independently and in a team. I can effectively
+              cooperate with colleagues, exchanging ideas and finding optimal
+              solutions. Professional maturity allows you to calmly cope with
+              challenges and stressful situations, while maintaining a high
+              quality of work.I am always looking for opportunities for
+              self-improvement. I actively study new technologies and practices
+              to stay abreast of the latest innovations. I have a strong
+              understanding of various programming languages, frameworks and
+              architectural concepts that allow me to create efficient and
+              scalable software.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ac about-me-info-item">
+        <div class="ac-trigger">
+          <ul class="about-me-info-header">
+            <li class="about-me-info-title">ROLE</li>
+            <li class="about-me-info-btn">
+              <svg class="about-me-nav-btn">
+                <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-down"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="ac-panel">
+          <p class="ac-text about-me-info-text">Frontend development</p>
+          <p class="ac-text about-me-info-text">HeadlessCMS,Wordpress</p>
+          <p class="ac-text about-me-info-text">Blender(enjoy)</p>
+        </div>
+      </div>
+
+      <div class="ac about-me-info-item">
+        <div class="ac-trigger">
+          <ul class="about-me-info-header">
+            <li class="about-me-info-title">EDUCATION</li>
+            <li class="about-me-info-btn">
+              <svg class="about-me-nav-btn">
+                <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-down"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+        <div class="ac-panel">
+          <p class="ac-text about-me-info-text">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </p>
+          <p class="ac-text about-me-info-text">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </p>
+          <p class="ac-text about-me-info-text">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="about-me-swiper-container">
+      <div class="about-me-swiper">
+        <ul class="swiper-wrapper about-me-swiper-wrapper">
+          <li class="swiper-slide about-me-swiper-slide">
+            <div class="about-me-slide">HTML/CSS</div>
+          </li>
+          <li class="swiper-slide about-me-swiper-slide">
+            <div class="about-me-slide">JavaScript</div>
+          </li>
+          <li class="swiper-slide about-me-swiper-slide">
+            <div class="about-me-slide">React</div>
+          </li>
+          <li class="swiper-slide about-me-swiper-slide">
+            <div class="about-me-slide">Node.js</div>
+          </li>
+          <li class="swiper-slide about-me-swiper-slide">
+            <div class="about-me-slide">React Native</div>
+          </li>
+          <li class="swiper-slide about-me-swiper-slide">
+            <div class="about-me-slide">Soft skills</div>
+          </li>
+          <!-- loop -->
+          <li class="swiper-slide about-me-swiper-slide">
+            <div class="about-me-slide">HTML/CSS</div>
+          </li>
+          <li class="swiper-slide about-me-swiper-slide">
+            <div class="about-me-slide">JavaScript</div>
+          </li>
+          <li class="swiper-slide about-me-swiper-slide">
+            <div class="about-me-slide">React</div>
+          </li>
+          <li class="swiper-slide about-me-swiper-slide">
+            <div class="about-me-slide">Node.js</div>
+          </li>
+          <li class="swiper-slide about-me-swiper-slide">
+            <div class="about-me-slide">React Native</div>
+          </li>
+          <li class="swiper-slide about-me-swiper-slide">
+            <div class="about-me-slide">Soft skills</div>
+          </li>
+        </ul>
+      </div>
+      <svg class="about-me-slide-next-btn">
+        <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-right"></use>
+      </svg>
     </div>
   </div>
 </section>
+
+      <section id="benefits" class="benefits section">
+  <div class="content container">
+    <h2 class="benefits-title">Benefits of working with me</h2>
+    <ul class="content-list">
+      <li class="content-item">
+        <div class="content-icon">
+          <svg class="icon-svg" width="24" height="24">
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-user"></use>
+          </svg>
+        </div>
+        <h3 class="item-title">Expertise</h3>
+        <p class="item-text">
+          As a highly experienced developer, I have deep knowledge of
+          programming and website development.
+        </p>
+      </li>
+      <li class="content-item">
+        <div class="content-icon">
+          <svg class="icon-svg" width="24" height="24">
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-message"></use>
+          </svg>
+        </div>
+        <h3 class="item-title">Communication</h3>
+        <p class="item-text">
+          Understanding your needs and wants is my priority and I am always open
+          to discussions and corrections.
+        </p>
+      </li>
+
+      <li class="content-item">
+        <div class="content-icon">
+          <svg class="icon-svg" width="24" height="24">
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-brush"></use>
+          </svg>
+        </div>
+        <h3 class="item-title">Art</h3>
+        <p class="item-text">
+          Thanks to my creative nature, I am ready to accept challenges and help
+          you bring your ideas to life.
+        </p>
+      </li>
+
+      <li class="content-item">
+        <div class="content-icon">
+          <svg class="icon-svg" width="24" height="24">
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-hourglass"></use>
+          </svg>
+        </div>
+        <h3 class="item-title">Urgent execution</h3>
+        <p class="item-text">
+          I understand how important time is to you. Ready to work quickly and
+          efficiently, without reducing the quality of work.
+        </p>
+      </li>
+    </ul>
+    <a class="anchor" href="#work-together">Order the project</a>
+  </div>
+</section>
+
+      <section id="projects" class="projects section">
+  <div class="container">
+    <h2 class="projects-title">Projects</h2>
+    <div class="swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide projects-item">
+          <div class="desc-container">
+            <ul class="tech-list">
+              <li class="item-tech">#react</li>
+              <li class="item-tech">#js</li>
+              <li class="item-tech">#node js</li>
+              <li class="item-tech">#git</li>
+            </ul>
+            <h3 class="project-dscr">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+
+            <a
+              href="https://github.com/MaksymMykhailets/portfolio"
+              class="project-link"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="img-container">
+            <picture>
+              <!-- Desktop and tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="/portfolio/assets/project-1-desk-9925e3dc.png 1x, /portfolio/assets/project-1-desk@2x-0f6ec2c9.png 2x"
+                width="614"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="/portfolio/assets/project-1-df6c030e.png 1x, /portfolio/assets/project-1@2x-ead58511.png 2x"
+              />
+              <img
+                class="project-picture"
+                src="/portfolio/assets/project-1-df6c030e.png"
+                alt="reading-app"
+                width="311"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+
+        <li class="swiper-slide projects-item">
+          <div class="desc-container">
+            <ul class="tech-list">
+              <li class="item-tech">#react</li>
+              <li class="item-tech">#js</li>
+              <li class="item-tech">#node js</li>
+              <li class="item-tech">#git</li>
+            </ul>
+            <h3 class="project-dscr">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              href="https://github.com/MaksymMykhailets/portfolio"
+              class="project-link"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="img-container">
+            <picture>
+              <!-- Desktop and tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="/portfolio/assets/project-2-desk-731c4e84.png 1x, /portfolio/assets/project-2-desk@2x-a87399e9.png 2x"
+                width="614"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="/portfolio/assets/project-2-3b6e13d4.png 1x, /portfolio/assets/project-2@2x-78ced5eb.png 2x"
+              />
+              <img
+                class="project-picture"
+                src="/portfolio/assets/project-2-3b6e13d4.png"
+                alt="pet-app"
+                width="311"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+
+        <li class="swiper-slide projects-item">
+          <div class="desc-container">
+            <ul class="tech-list">
+              <li class="item-tech">#react</li>
+              <li class="item-tech">#js</li>
+              <li class="item-tech">#node js</li>
+              <li class="item-tech">#git</li>
+            </ul>
+            <h3 class="project-dscr">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+
+            <a
+              href="https://github.com/MaksymMykhailets/portfolio"
+              class="project-link"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="img-container">
+            <picture>
+              <!-- Desktop and tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="/portfolio/assets/project-3-desk-c886bb61.png 1x, /portfolio/assets/project-3-desk@2x-c081ac27.png 2x"
+                width="614"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="/portfolio/assets/project-3-70f8fb3d.png 1x, /portfolio/assets/project-3@2x-ea6cf20f.png 2x"
+              />
+              <img
+                class="project-picture"
+                src="/portfolio/assets/project-3-70f8fb3d.png"
+                alt="vocab-app"
+                width="311"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
+      <div class="btn-container">
+        <div class="swiper-button-prev swiper-button-prev-style">
+          <svg class="swiper-icon">
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-left"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next swiper-button-next-style">
+          <svg class="swiper-icon">
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="faq" class="faq container">
+  <h2 class="faq-title">FAQ</h2>
+  <ul class="faq-container section">
+    <li class="faq-ac left">
+      <div class="faq-wrapper">
+        <p class="faq-item">
+          What programming languages ​​are most often used in your project?
+        </p>
+        <button type="button" class="faq-btn">
+          <svg class="faq-arrow-down" width="20" height="20">
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-down"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="faq-ac-panel">
+        <p class="faq-ac-text">
+          In the field of web development, there are various technologies and
+          programming languages. Typically, this includes a combination of
+          frontend (client side) and backend (server side) languages.
+        </p>
+      </div>
+    </li>
+    <li class="faq-ac right">
+      <div class="faq-wrapper">
+        <p class="faq-item">What are the deadlines for the project?</p>
+        <button type="button" class="faq-btn">
+          <svg class="faq-arrow-down" width="20" height="20">
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-down"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="faq-ac-panel">
+        <p class="faq-ac-text">
+          The terms of project implementation depend to a large extent on a
+          number of factors, such as the scope of the project, its complexity,
+          and the availability of resources. Determining exact deadlines is a
+          difficult task, and it usually occurs during the planning phase of the
+          project.
+        </p>
+      </div>
+    </li>
+    <li class="faq-ac left">
+      <div class="faq-wrapper">
+        <p class="faq-item">What payment methods do you accept?</p>
+        <button type="button" class="faq-btn">
+          <svg class="faq-arrow-down" width="20" height="20">
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-down"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="faq-ac-panel">
+        <p class="faq-ac-text">
+          Payment through credit and debit cards such as Visa, MasterCard,
+          specialized electronic payment systems such as PayPal,as well as
+          payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+        </p>
+      </div>
+    </li>
+    <li class="faq-ac right">
+      <div class="faq-wrapper">
+        <p class="faq-item">How can I contact you?</p>
+        <button type="button" class="faq-btn">
+          <svg class="faq-arrow-down" width="20" height="20">
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-down"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="faq-ac-panel">
+        <p class="faq-ac-text">
+          In the field of web development, there are various technologies and
+          programming languages. Typically, this includes a combination of
+          frontend (client side) and backend (server side) languages.
+        </p>
+      </div>
+    </li>
+    <li class="faq-ac left down">
+      <div class="faq-wrapper">
+        <p class="faq-item">Do you provide advice or support?</p>
+        <button type="button" class="faq-btn">
+          <svg class="faq-arrow-down" width="20" height="20">
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-down"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="faq-ac-panel">
+        <p class="faq-ac-text">
+          The terms of project implementation depend to a large extent on a
+          number of factors, such as the scope of the project, its complexity,
+          and the availability of resources. Determining exact deadlines is a
+          difficult task, and it usually occurs during the planning phase of the
+          project.
+        </p>
+      </div>
+    </li>
+    <li class="faq-ac right">
+      <div class="faq-wrapper">
+        <p class="faq-item">
+          What does the process of developing a software product look like from
+          idea to implementation?
+        </p>
+        <button type="button" class="faq-btn">
+          <svg class="faq-arrow-down" width="20" height="20">
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-down"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="faq-ac-panel">
+        <p class="faq-ac-text">
+          Payment through credit and debit cards such as Visa, MasterCard,
+          specialized electronic payment systems such as PayPal, as well as
+          payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+        </p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+      <section class="covers section" id="animation">
+  <h3 class="visually-hidden">Covers title</h3>
+  <div class="content__covers container">
+    <div class="marquee">
+      <ul class="marquee__inner">
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-3-034358b7.png 1x, /portfolio/assets/cover-3@2x-c09060a3.png 2x"
+            alt="people's artist"
+            src="/portfolio/assets/cover-3-034358b7.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-1-af492f4d.png 1x, /portfolio/assets/cover-1@2x-6709bed1.png 2x"
+            alt="body transformation"
+            src="/portfolio/assets/cover-1-af492f4d.png"
+            loading="lazy"
+          />
+        </li>
+
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-6-e94a5100.png 1x, /portfolio/assets/cover-6@2x-2a2bd46e.png 2x"
+            alt="Brand"
+            src="/portfolio/assets/cover-6-e94a5100.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-9-95cab60f.png 1x, /portfolio/assets/cover-9@2x-ab85f90e.png 2x"
+            alt="English school"
+            src="/portfolio/assets/cover-9-95cab60f.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-8-ffeaeaba.png 1x, /portfolio/assets/cover-8@2x-3bdca758.png 2x"
+            alt="Fresh"
+            src="/portfolio/assets/cover-8-ffeaeaba.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-7-f472234a.png 1x, /portfolio/assets/cover-7@2x-bf56ece4.png 2x"
+            alt="Sport body"
+            src="/portfolio/assets/cover-7-f472234a.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-5-31c2c1f8.png 1x, /portfolio/assets/cover-5@2x-d4fca89e.png 2x"
+            alt="finance"
+            src="/portfolio/assets/cover-5-31c2c1f8.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-2-a26a7115.png 1x, /portfolio/assets/cover-2@2x-72f38b9a.png 2x"
+            alt="mimino hotel"
+            src="/portfolio/assets/cover-2-a26a7115.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-4-2d6c6d5d.png 1x, /portfolio/assets/cover-4@2x-311ef1c0.png 2x"
+            alt="vegetarianism"
+            src="/portfolio/assets/cover-4-2d6c6d5d.png"
+            loading="lazy"
+          />
+        </li>
+      </ul>
+      <ul class="marquee__inner">
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-6-e94a5100.png 1x, /portfolio/assets/cover-6@2x-2a2bd46e.png 2x"
+            alt="Brand"
+            src="/portfolio/assets/cover-6-e94a5100.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-9-95cab60f.png 1x, /portfolio/assets/cover-9@2x-ab85f90e.png 2x"
+            alt="English school"
+            src="/portfolio/assets/cover-9-95cab60f.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-8-ffeaeaba.png 1x, /portfolio/assets/cover-8@2x-3bdca758.png 2x"
+            alt="Fresh"
+            src="/portfolio/assets/cover-8-ffeaeaba.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-7-f472234a.png 1x, /portfolio/assets/cover-7@2x-bf56ece4.png 2x"
+            alt="Sport body"
+            src="/portfolio/assets/cover-7-f472234a.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-5-31c2c1f8.png 1x, /portfolio/assets/cover-5@2x-d4fca89e.png 2x"
+            alt="finance"
+            src="/portfolio/assets/cover-5-31c2c1f8.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-2-a26a7115.png 1x, /portfolio/assets/cover-2@2x-72f38b9a.png 2x"
+            alt="mimino hotel"
+            src="/portfolio/assets/cover-2-a26a7115.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-4-2d6c6d5d.png 1x, /portfolio/assets/cover-4@2x-311ef1c0.png 2x"
+            alt="vegetarianism"
+            src="/portfolio/assets/cover-4-2d6c6d5d.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-3-034358b7.png 1x, /portfolio/assets/cover-3@2x-c09060a3.png 2x"
+            alt="people's artist"
+            src="/portfolio/assets/cover-3-034358b7.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-1-af492f4d.png 1x, /portfolio/assets/cover-1@2x-6709bed1.png 2x"
+            alt="body transformation"
+            src="/portfolio/assets/cover-1-af492f4d.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-10-8939cf48.png 1x, /portfolio/assets/cover-10@2x-88c03296.png 2x"
+            alt="business"
+            src="/portfolio/assets/cover-10-8939cf48.png"
+            loading="lazy"
+          />
+        </li>
+      </ul>
+      <ul class="marquee__inner">
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-7-f472234a.png 1x, /portfolio/assets/cover-7@2x-bf56ece4.png 2x"
+            alt="Sport body"
+            src="/portfolio/assets/cover-7-f472234a.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-5-31c2c1f8.png 1x, /portfolio/assets/cover-5@2x-d4fca89e.png 2x"
+            alt="finance"
+            src="/portfolio/assets/cover-5-31c2c1f8.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-2-a26a7115.png 1x, /portfolio/assets/cover-2@2x-72f38b9a.png 2x"
+            alt="mimino hotel"
+            src="/portfolio/assets/cover-2-a26a7115.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-4-2d6c6d5d.png 1x, /portfolio/assets/cover-4@2x-311ef1c0.png 2x"
+            alt="vegetarianism"
+            src="/portfolio/assets/cover-4-2d6c6d5d.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-3-034358b7.png 1x, /portfolio/assets/cover-3@2x-c09060a3.png 2x"
+            alt="people's artist"
+            src="/portfolio/assets/cover-3-034358b7.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-1-af492f4d.png 1x, /portfolio/assets/cover-1@2x-6709bed1.png 2x"
+            alt="body transformation"
+            src="/portfolio/assets/cover-1-af492f4d.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-10-8939cf48.png 1x, /portfolio/assets/cover-10@2x-88c03296.png 2x"
+            alt="business"
+            src="/portfolio/assets/cover-10-8939cf48.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-6-e94a5100.png 1x, /portfolio/assets/cover-6@2x-2a2bd46e.png 2x"
+            alt="Brand"
+            src="/portfolio/assets/cover-6-e94a5100.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-9-95cab60f.png 1x, /portfolio/assets/cover-9@2x-ab85f90e.png 2x"
+            alt="English school"
+            src="/portfolio/assets/cover-9-95cab60f.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-8-ffeaeaba.png 1x, /portfolio/assets/cover-8@2x-3bdca758.png 2x"
+            alt="Fresh"
+            src="/portfolio/assets/cover-8-ffeaeaba.png"
+            loading="lazy"
+          />
+        </li>
+      </ul>
+      <ul class="marquee__inner">
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-3-034358b7.png 1x, /portfolio/assets/cover-3@2x-c09060a3.png 2x"
+            alt="people's artist"
+            src="/portfolio/assets/cover-3-034358b7.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-1-af492f4d.png 1x, /portfolio/assets/cover-1@2x-6709bed1.png 2x"
+            alt="body transformation"
+            src="/portfolio/assets/cover-1-af492f4d.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-10-8939cf48.png 1x, /portfolio/assets/cover-10@2x-88c03296.png 2x"
+            alt="business"
+            src="/portfolio/assets/cover-10-8939cf48.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-6-e94a5100.png 1x, /portfolio/assets/cover-6@2x-2a2bd46e.png 2x"
+            alt="Brand"
+            src="/portfolio/assets/cover-6-e94a5100.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-9-95cab60f.png 1x, /portfolio/assets/cover-9@2x-ab85f90e.png 2x"
+            alt="English school"
+            src="/portfolio/assets/cover-9-95cab60f.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-8-ffeaeaba.png 1x, /portfolio/assets/cover-8@2x-3bdca758.png 2x"
+            alt="Fresh"
+            src="/portfolio/assets/cover-8-ffeaeaba.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-7-f472234a.png 1x, /portfolio/assets/cover-7@2x-bf56ece4.png 2x"
+            alt="Sport body"
+            src="/portfolio/assets/cover-7-f472234a.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-5-31c2c1f8.png 1x, /portfolio/assets/cover-5@2x-d4fca89e.png 2x"
+            alt="finance"
+            src="/portfolio/assets/cover-5-31c2c1f8.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-2-a26a7115.png 1x, /portfolio/assets/cover-2@2x-72f38b9a.png 2x"
+            alt="mimino hotel"
+            src="/portfolio/assets/cover-2-a26a7115.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-4-2d6c6d5d.png 1x, /portfolio/assets/cover-4@2x-311ef1c0.png 2x"
+            alt="vegetarianism"
+            src="/portfolio/assets/cover-4-2d6c6d5d.png"
+            loading="lazy"
+          />
+        </li>
+      </ul>
+      <ul class="marquee__inner">
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-6-e94a5100.png 1x, /portfolio/assets/cover-6@2x-2a2bd46e.png 2x"
+            alt="Brand"
+            src="/portfolio/assets/cover-6-e94a5100.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-9-95cab60f.png 1x, /portfolio/assets/cover-9@2x-ab85f90e.png 2x"
+            alt="English school"
+            src="/portfolio/assets/cover-9-95cab60f.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-8-ffeaeaba.png 1x, /portfolio/assets/cover-8@2x-3bdca758.png 2x"
+            alt="Fresh"
+            src="/portfolio/assets/cover-8-ffeaeaba.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-7-f472234a.png 1x, /portfolio/assets/cover-7@2x-bf56ece4.png 2x"
+            alt="Sport body"
+            src="/portfolio/assets/cover-7-f472234a.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-5-31c2c1f8.png 1x, /portfolio/assets/cover-5@2x-d4fca89e.png 2x"
+            alt="finance"
+            src="/portfolio/assets/cover-5-31c2c1f8.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-2-a26a7115.png 1x, /portfolio/assets/cover-2@2x-72f38b9a.png 2x"
+            alt="mimino hotel"
+            src="/portfolio/assets/cover-2-a26a7115.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-4-2d6c6d5d.png 1x, /portfolio/assets/cover-4@2x-311ef1c0.png 2x"
+            alt="vegetarianism"
+            src="/portfolio/assets/cover-4-2d6c6d5d.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-3-034358b7.png 1x, /portfolio/assets/cover-3@2x-c09060a3.png 2x"
+            alt="people's artist"
+            src="/portfolio/assets/cover-3-034358b7.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-1-af492f4d.png 1x, /portfolio/assets/cover-1@2x-6709bed1.png 2x"
+            alt="body transformation"
+            src="/portfolio/assets/cover-1-af492f4d.png"
+            loading="lazy"
+          />
+        </li>
+        <li class=".marquee__line animate-covers">
+          <img
+            srcset="/portfolio/assets/cover-10-8939cf48.png 1x, /portfolio/assets/cover-10@2x-88c03296.png 2x"
+            alt="business"
+            src="/portfolio/assets/cover-10-8939cf48.png"
+            loading="lazy"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container">
+    <h2 class="title_reviews">REVIEWS</h2>
+
+    <h3 class="visually-hidden placeholder_text">Not found</h3>
+    <div class="swiper swiper_js">
+      <div class="swiper-wrapper swiper_reviews"></div>
+      <div class="buttons_reviews">
+        <button type="button" class="start btn_reviews">
+          <svg
+            class="reviews_icon_start"
+            width="24"
+            height="24"
+            style="stroke: #fafafa"
+          >
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button type="button" class="end btn_reviews">
+          <svg
+            class="reviews_icon_end"
+            width="24"
+            height="24"
+            style="stroke: #fafafa"
+          >
+            <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <div id="lwt" class="lets-work-together container">
+  <h2 class="lwt-title">
+    <img class="title-img" src="/portfolio/assets/avatar-1ea26237.png" alt="avatar" />
+    Let’s <span class="lwt-span">work</span> together
+  </h2>
+
+  <form class="form" action="submit">
+    <div class="lwt-box">
+      <label class="lwt-wrapper">
+        <input
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          placeholder="clients@gmail.com"
+          type="email"
+          name="email"
+          class="lwt-input"
+          required
+        />
+      </label>
+      <label class="lwt-wrapper">
+        <input
+          class="lwt-input"
+          type="text"
+          placeholder="comments"
+          name="comment"
+          maxlength="100"
+          required
+        />
+      </label>
+    </div>
+    <button id="btnSend" class="btn" type="submit">Send</button>
+  </form>
+
+  <address class="lwt-address">
+    <a class="address-link" href="mailto:lloydjefferson@gmail.com"
+      >lloydjefferson@gmail.com</a
+    >
+    <a class="address-link" href="tel:+3801111111111">+380 11 1111 11 11</a>
+  </address>
+</div>
+
+<div class="modal-backdrop visually-hidden">
+  <div class="modal-box">
+    <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+    <p class="modal-text">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+    <button class="modal-close-btn" type="button">
+      <svg class="modal-close-icon" width="22" height="22">
+        <use href="/portfolio/assets/icon-sprite-1e5406a1.svg#icon-close-menu"></use>
+      </svg>
+    </button>
+  </div>
+</div>
 
 
     
