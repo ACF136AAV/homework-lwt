@@ -61,7 +61,16 @@
     background-color: #fafafa80;
 }
 
-.lwt-wrapper.invalid::after {
+.lwt-wrapper.success::after {
+    content: 'Success!';
+    color: #3cbc81;
+    background-color: #3cbc81;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 1.28em;
+}
+
+.lwt-wrapper.mail.invalid::after {
     content: 'Invalid email,try again';
     color: #e74a3b;
     background-color: #e74a3b;
@@ -70,14 +79,16 @@
     line-height: 1.28em;
 }
 
-.lwt-wrapper.succes::after {
-    content: 'Succes!';
-    color: #3cbc81;
-    background-color: #3cbc81;
+.lwt-wrapper.com.invalid::after {
+    content: 'Missing comment,try again';
+    color: #e74a3b;
+    background-color: #e74a3b;
     font-size: 14px;
     letter-spacing: -0.02em;
     line-height: 1.28em;
 }
+
+
 
 .lwt-input {
     background-color: transparent;
